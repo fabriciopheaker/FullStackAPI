@@ -10,11 +10,10 @@
 </head>
 
 <body>
+
   <header>
-    <nav class="navbar navbar-dark bg-warning fixed-top">
-      <a class="navbar-brand " href="#">
-        <img src="{{asset('img/logo.png')}}" width="70" height="50" class="d-inline-block align-top" alt="">
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+      <a class="navbar-brand" href="#"><img src="{{asset('img/logo.png')}}" width="70" height="50" class="d-inline-block align-top" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,22 +21,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#buscar">Buscar <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
+
+        </ul>
+
+      </div>
     </nav>
   </header>
 
 
-  <main class="container-fluid bg-light my-5 py-5">
-
+  <main class="container-fluid bg-light py-5">
     <div class="mx-3 px-3 row justify-content-cent">
       <div class="col-3"></div>
-      <div class="col-6">
-        <section class="container my-5 py-5 px-3 mx-3 border border-secondary bg-primary text-light rounded-lg">
-          <h1 class=" text-center">Buscar</h1>
+      <div class="col-6 container my-5 py-5 mx-3 px-3">
+        <section class="container my-5 py-5 px-3 mx-3 border border-secondary bg-primary text-light rounded-lg" id="buscar">
+          <h1 class="text-center">Buscar</h1>
           <form>
             <label for="ruaBusca1">Rua</label>
             <input type="text" class="form-control disable" id="ruaBusca" placeholder="Endereço">
@@ -48,9 +50,8 @@
             </div>
           </form>
         </section>
-
         <section class="container my-5 py-5 mx-3 px-3">
-          <h1 class="text-primary text-center">Endereços</h1>
+          <h1 class="text-primary text-center">Resultado</h1>
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Rua</label>
@@ -67,7 +68,17 @@
               <input type="text" class="form-control disable" id="exampleFormControlInput1" placeholder="Estado" readonly>
             </div>
           </form>
+
         </section>
+
+
+        <section class="">
+          <h1 class="text-primary text-center">Cadastrados</h1>
+        </section>
+
+
+
+
       </div>
       <div class="col-3"></div>
     </div>
